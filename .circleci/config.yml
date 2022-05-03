@@ -40,4 +40,4 @@ workflows:
               tags:
                 only: /^beta.*/ 
               branches:
-                ignore: main 
+                ignore: /.*/ 
