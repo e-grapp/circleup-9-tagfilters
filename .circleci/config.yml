@@ -34,9 +34,8 @@ workflows:
             tags:
               only: /.*/
       - deploy:
-          filters:
-            branches:
-            tags:
-              only: /^beta-*/
           requires:
             - test
+          filters:
+              tags:
+                only: /^beta-*.*/  
